@@ -3,10 +3,9 @@ package edu.austral.ingsis;
 import static java.util.Map.entry;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import edu.austral.ingsis.clifford.MyFileSystem;
 import java.util.List;
 import java.util.Map;
-
-import edu.austral.ingsis.clifford.MyFileSystem;
 import org.junit.jupiter.api.Test;
 
 public class FileSystemTests {
@@ -25,7 +24,6 @@ public class FileSystemTests {
 
   @Test
   public void test1() {
-
     executeTest(
         List.of(
             entry("ls", ""),
@@ -33,9 +31,7 @@ public class FileSystemTests {
             entry("ls", "horace"),
             entry("mkdir emily", "'emily' directory created"),
             entry("ls", "horace emily"),
-            entry("ls --ord=asc", "emily horace")
-        )
-    );
+            entry("ls --ord=asc", "emily horace")));
   }
 
   @Test

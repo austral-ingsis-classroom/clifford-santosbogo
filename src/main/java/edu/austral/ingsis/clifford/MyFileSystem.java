@@ -1,8 +1,8 @@
 package edu.austral.ingsis.clifford;
 
-import edu.austral.ingsis.clifford.structure.*;
 import edu.austral.ingsis.clifford.commands.Command;
 import edu.austral.ingsis.clifford.components.Directory;
+import edu.austral.ingsis.clifford.structure.*;
 import java.util.HashMap;
 import java.util.Map;
 

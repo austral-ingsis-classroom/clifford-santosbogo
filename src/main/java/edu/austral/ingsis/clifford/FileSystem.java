@@ -3,11 +3,11 @@ package edu.austral.ingsis.clifford;
 import edu.austral.ingsis.clifford.components.Directory;
 
 public interface FileSystem {
-    void setCurrent(Directory current);
+  void setCurrent(Directory current);
 
-    Directory getCurrent();
+  Directory getCurrent();
 
-    Directory getRoot();
+  Directory getRoot();
 
-    String executeCommand(String command);
+  String executeCommand(String command);
 }
